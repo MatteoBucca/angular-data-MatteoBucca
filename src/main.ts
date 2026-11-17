@@ -1,17 +1,14 @@
 import { Component, signal } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
-
+import { UserItem } from './app/user-item/user-item';
+import { HelloWorld } from './app/hello-world/hello-world';
 @Component({
   selector: 'app-root',
+  imports: [UserItem, HelloWorld],
   template: `
-    <h1>Hello from {{ name }}</h1>
-    <a target="_blank" href="https://angular.dev/overview">
-      Learn more about Angular
-
-    </a>
-    <button (click)="counter.set(counter() - 1)">--</button>
-    <span> Counter: {{ counter() }} </span>
-    <button (click)="counter.set(counter() + 1)">++</button>
+  <h1>Welcome to {{ name }}!</h1>
+  <app-hello-world></app-hello-world>
+  <app-user-item></app-user-item> 
   `,
 })
 export class App {

@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrl: './user-item.css',
 })
 export class UserItem {
-
+  name: string;
+  constructor() {
+    this.name = 'Felipe';
+  }
+     
 }

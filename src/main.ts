@@ -9,9 +9,7 @@ import { HelloWorld } from './app/hello-world/hello-world';
   <h1>Welcome to {{ name }}!</h1>
   <app-hello-world></app-hello-world>
   <app-user-item></app-user-item> 
-  <app-user-item></app-user-item>
-  <app-user-item></app-user-item>
-
+  
   `,
 })
 export class App {

@@ -10,7 +10,8 @@ export class UserItem {
   name: string;
   constructor() {
     this.name = 'Felipe';
-    console.log('creato', this.name);
   }
+
+  
      
 }
